@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google map 2022.02.23</title>
+    <style>
+        #map{
+            height: 100%;
+        }
+
+        html,body{
+            height: 100%;
+            margin:0;
+            padding:0;
+        }
+    </style>
+</head>
+<body>
+    <span>test</span>
+    <div id="map" style="background-color: aliceblue;" ></div>
+
+    <script>
+        var map;
+        function initMap(){
+            map=new google.maps.Map(document.getElementById('map')
+            ,{center:{lat:-34.397,lng:150.644}
+            ,zoom:8
+            });
+        }
+        </script>
+
+        <scrpt src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-fm6UAhuq0x0vWAH37DNwo94dxwpN6Nw&callback=initMap">
+        </scrpt>
+        <span>end test</span>
+    
+</body>
+</html>
